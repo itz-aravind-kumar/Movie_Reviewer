@@ -1,0 +1,57 @@
+/* src/App.css */
+
+.App {
+  text-align: center;
+}
+
+form {
+  margin: 20px 0;
+}
+
+input {
+  margin: 5px;
+  padding: 8px;
+  width: 200px;
+}
+
+button {
+  padding: 8px 16px;
+  margin: 5px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin: 10px 0;
+}
+
+nav, .card{       /*------------------------------------------------- */
+  background-color: #16274a;
+}
+
+/* src/components/AddReview.css */
+.star-rating {
+  display: flex;
+  direction: row-reverse;
+  font-size: 2rem;
+  justify-content: center;
+}
+
+.star-rating input {
+  display: none;
+}
+
+.star-rating label {
+  color: #e4e5e9;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.star-rating input:checked ~ label,
+.star-rating label:hover,
+.star-rating label:hover ~ label {
+  color: #ffc107;
+}
